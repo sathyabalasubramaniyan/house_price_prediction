@@ -12,6 +12,7 @@ This project uses the following software and Python libraries:
 CODE EXPLANATION:
   First import our libraries and dataset .The Kaggle House Prices datasets can be downloaded from kaggle.com/harlfoxem/housesalesprediction
   
+ 
     Data = pd.read_csv('kc_house_data.csv')
      
     
