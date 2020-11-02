@@ -118,8 +118,8 @@ sns.countplot() shows the number of occurrences of an item based on a certain ty
       
 StandardScaler performs the task of Standardization and s_scaler.fit_transform ()fit  data, then transform float type.
 
-#METHOD 1:
-LINEAR REGRESSION
+# METHOD 1:
+# LINEAR REGRESSION
   
     regressor = LinearRegression()  
     regressor.fit(X_train, y_train)
@@ -134,7 +134,7 @@ LINEAR REGRESSION
 
  LinearRegression() creates linear regression object regressor and fit(X_train, y_train) fits the model using the training sets and Make predictions using the testing set using regressor.predict(X_test) and then calculate residuals
  
- # CALCULATE ERRORS
+ #CALCULATE ERRORS
      
      print('Mean Absolute Error: {:.2f}'.format(metrics.mean_absolute_error(y_test, y_predd))) 
      print('Mean Squared Error:{:.2f}'.format(metrics.mean_squared_error(y_test, y_predd)))  
