@@ -11,12 +11,12 @@ This project uses the following software and Python libraries:
 * sklearn
 CODE EXPLANATION:
   First import our libraries and dataset .The Kaggle House Prices datasets can be downloaded from kaggle.com/harlfoxem/housesalesprediction
-     
-    
+  
     Data = pd.read_csv(r'C:\Users\hp\Desktop\Sathya\ml\kc_house_data.csv')
     print(Data.head(5).T)
-    Data.info()
-    print(Data.describe()) 
+  Data.info()
+  print(Data.describe()) 
+    
     
 By using Pandas.read_csv(), read our dataset and viewing our dataset using Pandas.head().T that will transpose our columns and rows.Pandas Pandas.info() function is used to get a concise summary of the dataframethat  includes list of all columns with their data types and the number of non-null values in each column. we also have the value of rangeindex provided for the index axis.Pandas describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values.
 
