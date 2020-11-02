@@ -145,6 +145,19 @@ StandardScaler performs the task of Standardization and s_scaler.fit_transform (
      print("Test Score {:.2f}".format(regressor.score(X_test, y_test)))
         
   Calculate Mean Absolute Error,Mean Squared Error,Root Mean Squared Error,Variance score ,Train Score,Test Score by using defined functions
-
+  After fitting our data to the model we can check the score of our data ie , prediction. in this case the prediction  of test datasets is 70% and of train datsset is 69% we need to increase our scores.
+  
+ Gradient boosting is one of the most powerful techniques for building predictive models and It is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+# METHOD 2
+# GRADIENTBOOSTING REGRESSION
  
+    clf = ensemble.GradientBoostingRegressor(n_estimators = 400, max_depth = 5, min_samples_split = 2,learning_rate = 0.1, loss = 'ls')
+    clf.fit(X_train,y_train,)
+    print('GradientBoosting Regression Model:')
+    print("Train Score {:.2f}".format(clf.score(X_train,y_train)))
+    print("Test Score {:.2f}".format(clf.score(X_test, y_test)))
+
+
+  Fit our training data into the gradient boosting model and check for accuracy . In this case the prediction  of test datasets is 89% and of train datsset is 98% 
+  
  
