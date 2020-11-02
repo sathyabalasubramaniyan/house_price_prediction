@@ -11,14 +11,13 @@ This project uses the following software and Python libraries:
 * sklearn
 CODE EXPLANATION:
   First import our libraries and dataset .The Kaggle House Prices datasets can be downloaded from kaggle.com/harlfoxem/housesalesprediction
-  
- 
-    Data = pd.read_csv('kc_house_data.csv')
+
      
     
     
-By using Pandas.read_csv(), read our dataset and viewing our dataset using Pandas.head().Tthat will transpose our columns and rows
-
+By using Pandas.read_csv(), read our dataset and viewing our dataset using Pandas.head().T that will transpose our columns and rows
+    
+    Data = pd.read_csv('kc_house_data.csv')
     print(Data.head(5).T)
     Data.info()
     print(Data.describe())
