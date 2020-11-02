@@ -17,7 +17,13 @@ CODE EXPLANATION:
      
     
     
-By using Pandas.read_csv(), read our dataset and viewing our dataset using Pandas.head().T that will transpose our columns and rows.Pandas Pandas.info() function is used to get a concise summary of the dataframethat  includes list of all columns with their data types and the number of non-null values in each column. we also have the value of rangeindex provided for the index axis.Pandas describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values.
+By using Pandas.read_csv(), read our dataset and viewing our dataset using Pandas.head().Tthat will transpose our columns and rows
+
+    print(Data.head(5).T)
+    Data.info()
+    print(Data.describe())
+
+Pandas.info() function is used to get a concise summary of the dataframethat  includes list of all columns with their data types and the number of non-null values in each column. we also have the value of rangeindex provided for the index axis.Pandas describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values.
 
  #DATA CLEANING   
  
