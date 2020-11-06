@@ -25,7 +25,7 @@ PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
        long           
        year          
        month           
-   I have implemented  this project in two parts. First part contains data analysis by visualization of datasets in various plot as explained in Datavisual.py. Second is training of machine learning models explained in Houseprediction.py  
+   I have implemented  this project in two parts. First part contains data analysis by visualization of datasets in various plot as explained in Datavisual.py. Second is training of machine learning models explained in Housepricesprediction.py  
    Here, I have trained various algorithms like
 # METHOD 1:
 # MULTIPLE LINEAR REGRESSION
