@@ -1,6 +1,7 @@
 # house_price_prediction
 PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
-This project applies linear regression on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data. This project aims apply various Python tools to get a visual understanding of the data and clean it to make it ready to apply machine learning opertation on it.
+
+  This project applies linear regression on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data. This project aims apply various Python tools to get a visual understanding of the data and clean it to make it ready to apply machine learning opertation on it.
 Software and Libraries
 This project uses the following software and Python libraries:
 * Python
@@ -119,45 +120,23 @@ sns.countplot() shows the number of occurrences of an item based on a certain ty
 StandardScaler performs the task of Standardization and s_scaler.fit_transform ()fit  data, then transform float type.
 
 # METHOD 1:
-# LINEAR REGRESSION
-  
-    regressor = LinearRegression()  
-    regressor.fit(X_train, y_train)
-    y_predd = regressor.predict(X_test)
-    df = pd.DataFrame({'Actual': y_test, 'Predicted': y_predd})
-    df1 = df.head(10)
-    fig = plt.figure(figsize=(10,5))
-    residuals = (y_test- y_predd)
-    sns.distplot(residuals)
-    plt.title('residuals')
-    plt.show()
-
- LinearRegression() creates linear regression object regressor and fit(X_train, y_train) fits the model using the training sets and Make predictions using the testing set using regressor.predict(X_test) and then calculate residuals
- 
- #CALCULATE ERRORS
-     
-     print('Mean Absolute Error: {:.2f}'.format(metrics.mean_absolute_error(y_test, y_predd))) 
-     print('Mean Squared Error:{:.2f}'.format(metrics.mean_squared_error(y_test, y_predd)))  
-     print('Root Mean Squared Error:{:.2f}'.format(np.sqrt(metrics.mean_squared_error(y_test, y_predd))))
-     print('Variance score is: {:.2f}'.format(metrics.explained_variance_score(y_test,y_predd)))
-     print('Linear Regression Model:')
-     print("Train Score {:.2f}".format(regressor.score(X_train,y_train)))
-     print("Test Score {:.2f}".format(regressor.score(X_test, y_test)))
-        
-  Calculate Mean Absolute Error,Mean Squared Error,Root Mean Squared Error,Variance score ,Train Score,Test Score by using defined functions
-  After fitting our data to the model we can check the score of our data ie , prediction. in this case the prediction  of test datasets is 70% and of train datsset is 69% we need to increase our scores.
-  
- Gradient boosting is one of the most powerful techniques for building predictive models and It is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+# MULTIPLE LINEAR REGRESSION
+   Linear Regression refers to a model that assumes a linear relationship between input variables and target variables.Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
+   Multiple Linear Regression is an extension of Simple Linear Regression.Multiple regression generally explains the relationship between multiple independent or predictor variables and one dependent or criterion variable.
+# METHOD 2:
+# RIDGE REGRESSION 
+  With increase of no of features,regression equation becomes higher order(polynomial equation)and leads to overfit that mean doesn't fit for realtime values and eliminate overfit by reducing size of coefficients 
+  Ridge Regression is a popular type of regularized linear regression that includes an L2 penalty and  an extension of linear regression that adds a regularization penalty to the loss function during training.L2 penalty is to penalize a model based on the sum of the squared coefficient values (alpha). 
+# METHOD 3:
+# LASSO REGRESSION 
+ Lasso Regression uses L1 regularization technique and also  extension of linear regression that adds a regularization penalty to the loss function during training.L1 penalty is to penalize a model based on the absolute of the squared coefficient values (alpha).
+ # METHOD 4:
+# ELASTIC NET REGRESSION 
+  By combining lasso and ridge regression we get Elastic-Net Regression. Elastic Net is proved to better it combines the regularization of both lasso and Ridge
 # METHOD 2
 # GRADIENTBOOSTING REGRESSION
+   Gradient boosting is one of the most powerful techniques for building predictive models and It is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
  
-    clf = ensemble.GradientBoostingRegressor(n_estimators = 400, max_depth = 5, min_samples_split = 2,learning_rate = 0.1, loss = 'ls')
-    clf.fit(X_train,y_train,)
-    print('GradientBoosting Regression Model:')
-    print("Train Score {:.2f}".format(clf.score(X_train,y_train)))
-    print("Test Score {:.2f}".format(clf.score(X_test, y_test)))
-
-
-  Fit our training data into the gradient boosting model and check for accuracy . In this case the prediction  of test datasets is 89% and of train datsset is 98% 
-  
+   
+we have predicted the house price using different ML model algorithms.
  
