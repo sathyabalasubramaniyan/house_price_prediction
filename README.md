@@ -47,17 +47,20 @@ PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
 This difference is called residual. After that Gradient boosting Regression trains a weak model that maps features to that residual. This residual predicted by a weak model is added to the existing model input and thus this process nudges the model towards the correct target. Repeating this step again and again improves the overall model prediction..
  
 # CONCLUSION     
-Gradient boosting regression  is the model that performed best among the several models ( MULTIPLE LINEAR REGRESSION,RIDGE REGRESSION,LASSO REGRESSION,ELASTIC NET
-REGRESSION ) 
+Gradient boosting regression  is the model that performed best among the several models 
 
+ ( MULTIPLE LINEAR REGRESSION,RIDGE REGRESSION,LASSO REGRESSION,ELASTIC NET REGRESSION ) 
 
- The performance of GBR is Train score of 97% and test score of 89%
 -Prediction accuracy was tested by train score and test score 
-Linear Regression Model:  69.315% and 70.401 %
-Ridge Regression Model: 69.311% and 70.398%
-Lasso Regression Model: 69.315%  and  70.395% 
-ElasticNet Regression Model:69.314% and 70.398%
-GradientBoosting Regression Model: 97.664% and 89.122%
+ 
+ 
+  Linear Regression Model:  69.315% and 70.401 %
+  Ridge Regression Model: 69.311% and 70.398%
+  Lasso Regression Model: 69.315%  and  70.395% 
+  ElasticNet Regression Model:69.314% and 70.398%
+  GradientBoosting Regression Model: 97.664% and 89.122%
+
+
 It was concluded that GradientBoosting Regression Model gives the best result.
 
 
