@@ -42,7 +42,7 @@ PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
 # ELASTIC NET REGRESSION 
   By combining lasso and ridge regression we get Elastic-Net Regression. Elastic Net is proved to better it combines the regularization of both lasso and Ridge.The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems.
 # METHOD 5
-# GRADIENTBOOSTING REGRESSION
+# GRADIENT BOOSTING REGRESSION
    Gradient boosting is one of the most powerful techniques for building predictive models and produces a prediction model in the form of an ensemble of weak prediction models. Gradient boosting Regression calculates the difference between the current prediction and the known correct target value.
 This difference is called residual. After that Gradient boosting Regression trains a weak model that maps features to that residual. This residual predicted by a weak model is added to the existing model input and thus this process nudges the model towards the correct target. Repeating this step again and again improves the overall model prediction..
  
@@ -54,11 +54,11 @@ Gradient boosting regression  is the model that performed best among the several
 -Prediction accuracy was tested by train score and test score 
  
  
-  Linear Regression Model:  69.315% and 70.401 %
-  Ridge Regression Model: 69.311% and 70.398%
-  Lasso Regression Model: 69.315%  and  70.395% 
-  ElasticNet Regression Model:69.314% and 70.398%
-  GradientBoosting Regression Model: 97.664% and 89.122%
+     Linear Regression Model:  69.315% and 70.401 %
+     Ridge Regression Model: 69.311% and 70.398%
+     Lasso Regression Model: 69.315%  and  70.395% 
+     ElasticNet Regression Model:69.314% and 70.398%
+     GradientBoosting Regression Model: 97.664% and 89.122%
 
 
 It was concluded that GradientBoosting Regression Model gives the best result.
