@@ -1,7 +1,7 @@
 # house_price_prediction
 PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
      
- The project applies regression algorithmns on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data.This project evaluate the performance and the predictive power of a model trained and tested on data set 
+ The project applies regression algorithms on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data.This project evaluate the performance and the predictive power of a model trained and tested on data set 
  
  The dataset contains 21613 entries and 21 variables.
          
@@ -26,7 +26,7 @@ PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
        year          
        month           
    I have implemented  this project in two parts. First part contains data analysis by visualization of datasets in various plot as explained in Datavisual.py. Second is training of machine learning models explained in Houseprediction.py  
-   Here, I have trained variousalgorithms like
+   Here, I have trained various algorithms like
 # METHOD 1:
 # MULTIPLE LINEAR REGRESSION
    Linear Regression refers to a model that assumes a linear relationship between input variables and target variables.Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
@@ -47,8 +47,18 @@ PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
 This difference is called residual. After that Gradient boosting Regression trains a weak model that maps features to that residual. This residual predicted by a weak model is added to the existing model input and thus this process nudges the model towards the correct target. Repeating this step again and again improves the overall model prediction..
  
 # CONCLUSION     
-  we have predicted the house price using different ML model algorithms.
 Gradient boosting regression  is the model that performed best among the several models ( MULTIPLE LINEAR REGRESSION,RIDGE REGRESSION,LASSO REGRESSION,ELASTIC NET
 REGRESSION ) 
-The performance of GBR is Train score of 97% and test score of 89%
+
+
+ The performance of GBR is Train score of 97% and test score of 89%
+-Prediction accuracy was tested by train score and test score 
+Linear Regression Model:  69.315% and 70.401 %
+Ridge Regression Model: 69.311% and 70.398%
+Lasso Regression Model: 69.315%  and  70.395% 
+ElasticNet Regression Model:69.314% and 70.398%
+GradientBoosting Regression Model: 97.664% and 89.122%
+It was concluded that GradientBoosting Regression Model gives the best result.
+
+
  
