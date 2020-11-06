@@ -1,7 +1,7 @@
 # house_price_prediction
 PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
      
- The project applies regression algorithmn on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data.This project evaluate the performance and the predictive power of a model trained and tested on data set 
+ The project applies regression algorithmns on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data.This project evaluate the performance and the predictive power of a model trained and tested on data set 
    
 # METHOD 1:
 # MULTIPLE LINEAR REGRESSION
@@ -17,12 +17,14 @@ PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
  # METHOD 4:
 # ELASTIC NET REGRESSION 
   By combining lasso and ridge regression we get Elastic-Net Regression. Elastic Net is proved to better it combines the regularization of both lasso and Ridge.The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems.
-# METHOD 2
+# METHOD 5
 # GRADIENTBOOSTING REGRESSION
-   Gradient boosting is one of the most powerful techniques for building predictive models and It is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models. Gradient boosting Regression calculates the difference between the current prediction and the known correct target value.
+   Gradient boosting is one of the most powerful techniques for building predictive models and produces a prediction model in the form of an ensemble of weak prediction models. Gradient boosting Regression calculates the difference between the current prediction and the known correct target value.
 This difference is called residual. After that Gradient boosting Regression trains a weak model that maps features to that residual. This residual predicted by a weak model is added to the existing model input and thus this process nudges the model towards the correct target. Repeating this step again and again improves the overall model prediction..
  
-   
-we have predicted the house price using different ML model algorithms.
-Gradient boosting regression was found to be the better model for predicting house prices. It performed the regession algorithms with performance accuracy of 95%
+# CONCLUSION     
+  we have predicted the house price using different ML model algorithms.
+Gradient boosting regression  is the model that performed best among the several models ( MULTIPLE LINEAR REGRESSION,RIDGE REGRESSION,LASSO REGRESSION,ELASTIC NET
+REGRESSION ) 
+The performance of GBR is Train score of 97% and test score of 89%
  
