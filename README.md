@@ -2,7 +2,31 @@
 PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
      
  The project applies regression algorithmns on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data.This project evaluate the performance and the predictive power of a model trained and tested on data set 
-   
+ 
+ The dataset contains 21613 entries and 21 variables.
+         
+       price            
+       sqft_living     
+       grade            
+       sqft_above       
+       sqft_living15    
+       bathrooms        
+       view             
+       sqft_basement    
+       bedrooms        
+       lat              
+       waterfront       
+       floors           
+       yr_renovated  
+       sqft_lot      
+       sqft_lot15    
+       yr_built        
+       condition       
+       long           
+       year          
+       month           
+   I have implemented  this project in two parts. First part contains data analysis by visualization of datasets in various plot as explained in Datavisual.py. Second is training of machine learning models explained in Houseprediction.py  
+   Here, I have trained variousalgorithms like
 # METHOD 1:
 # MULTIPLE LINEAR REGRESSION
    Linear Regression refers to a model that assumes a linear relationship between input variables and target variables.Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data.
