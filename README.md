@@ -1,9 +1,7 @@
 # house_price_prediction
 PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
      
- #The project applies regression algorithmn on dataset to predict the selling price of a new home.
-  #The objective of the project is to perform data visulalization techniques to understand the insight of the data
-  #This project evaluate the performance and the predictive power of a model trained and tested on data set 
+ The project applies regression algorithmn on dataset to predict the selling price of a new home.The objective of the project is to perform data visulalization techniques to understand the insight of the data.This project evaluate the performance and the predictive power of a model trained and tested on data set 
    
 # METHOD 1:
 # MULTIPLE LINEAR REGRESSION
@@ -15,13 +13,14 @@ PREDICTING PRICE OF HOUSES BY ANALYSING VARIOUS FACTORS
   Ridge Regression is a popular type of regularized linear regression that includes an L2 penalty and  an extension of linear regression that adds a regularization penalty to the loss function during training.L2 penalty is to penalize a model based on the sum of the squared coefficient values (alpha). 
 # METHOD 3:
 # LASSO REGRESSION 
- Lasso Regression uses L1 regularization technique and also  extension of linear regression that adds a regularization penalty to the loss function during training.L1 penalty is to penalize a model based on the absolute of the squared coefficient values (alpha).
+ Lasso regression is a type of linear regression that uses shrinkage. Shrinkage is where data values are shrunk towards a central point, like the mean.Lasso Regression uses L1 regularization technique and also  extension of linear regression that adds a regularization penalty to the loss function during training.L1 penalty is to penalize a model based on the absolute of the squared coefficient values (alpha).The goal of lasso regression is to obtain the subset of predictors that minimizes prediction error for a quantitative response variable.
  # METHOD 4:
 # ELASTIC NET REGRESSION 
-  By combining lasso and ridge regression we get Elastic-Net Regression. Elastic Net is proved to better it combines the regularization of both lasso and Ridge
+  By combining lasso and ridge regression we get Elastic-Net Regression. Elastic Net is proved to better it combines the regularization of both lasso and Ridge.The benefit is that elastic net allows a balance of both penalties, which can result in better performance than a model with either one or the other penalty on some problems.
 # METHOD 2
 # GRADIENTBOOSTING REGRESSION
-   Gradient boosting is one of the most powerful techniques for building predictive models and It is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees.
+   Gradient boosting is one of the most powerful techniques for building predictive models and It is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models. Gradient boosting Regression calculates the difference between the current prediction and the known correct target value.
+This difference is called residual. After that Gradient boosting Regression trains a weak model that maps features to that residual. This residual predicted by a weak model is added to the existing model input and thus this process nudges the model towards the correct target. Repeating this step again and again improves the overall model prediction..
  
    
 we have predicted the house price using different ML model algorithms.
